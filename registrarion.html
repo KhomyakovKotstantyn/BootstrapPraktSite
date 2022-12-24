@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration | U-Coda</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" />
+    <script src="./bootstrap/dist/js/bootstrap.js" defer></script>
+  </head>
+  <body>
+    <form class="reg row g-3 ms-5 me-5 mt-5 pb-4 pt-2 ps-5 pe-5">
+      <h1>Регистрация</h1>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Эл. адрес</label>
+        <input type="email" class="form-control" id="inputEmail4" />
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Пароль</label>
+        <input
+          type="password"
+          class="form-control"
+          id="inputPassword4"
+          placeholder="Пароль должен состоять не менее чем из 13 символов"
+        />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Ф.И.О.</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="Иванов Иван Иванов"
+        />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Код приглашения</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress2"
+          placeholder="EB5555555AA"
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Город</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputCity"
+          placeholder="Брянск"
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Область</label>
+        <select id="inputState" class="form-select">
+          <option selected>Выберите...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Индекс</label>
+        <input type="text" class="form-control" id="inputZip" />
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">
+            Присылать новые уведомления на почтовый адрес
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <a href="">
+          <button type="submit" class="btn btn-primary">
+            Зарегистрироваться
+          </button>
+        </a>
+      </div>
+    </form>
+  </body>
+</html>
